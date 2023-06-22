@@ -31,7 +31,6 @@ defineProps<{
     display: flex;
     height: 3cm;
     border: 1px solid #000000;
-    border-left: none;
 
     .differentiel {
       display: flex;

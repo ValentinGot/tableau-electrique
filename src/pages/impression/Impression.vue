@@ -15,6 +15,7 @@ const lignes = tableauElectrique
 .lignes-container {
   display: inline-flex;
   flex-direction: column;
+  padding: 0 20px 20px;
 
   & > *:not(:first-child) {
     margin-top: 1cm;
