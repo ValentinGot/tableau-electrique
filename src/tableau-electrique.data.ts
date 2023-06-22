@@ -82,22 +82,24 @@ export const tableauElectrique: LigneModel[] = [
       {
         id: 3,
         type: LigneDisjoncteurType.PRISE,
-        pieces: [],
-        detail: ['?'],
-        shortDescription: '?'
+        pieces: [Piece.SALON],
+        detail: ['Afficheur de consommations EC450'],
+        shortDescription: 'Afficheur de conso EC450'
       },
       {
         id: 4,
         type: LigneDisjoncteurType.PRISE,
-        pieces: [Piece.SALON],
+        pieces: [Piece.SALON, Piece.SAS, Piece.GARAGE],
         detail: [
           'A gauche du tableau électrique',
           'Bar',
           'Table à manger',
           `Mur vers l'extérieur x2`,
-          'TV x3'
+          'TV x3',
+          'Sas côté jardin',
+          'Garage'
         ],
-        shortDescription: 'Salon'
+        shortDescription: 'Salon, sas côté jardin, garage'
       },
       {
         id: 5,
@@ -154,10 +156,10 @@ export const tableauElectrique: LigneModel[] = [
       },
       {
         id: 6,
-        type: LigneDisjoncteurType.PRISE,
-        pieces: [],
-        detail: ['?'],
-        shortDescription: '?'
+        type: LigneDisjoncteurType.VMC,
+        pieces: [Piece.CUISINE],
+        detail: ['VMC'],
+        shortDescription: 'VMC'
       }
     ]
   }
