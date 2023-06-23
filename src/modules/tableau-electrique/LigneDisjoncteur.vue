@@ -1,19 +1,17 @@
 <script setup lang="ts">
 import type { LigneDisjoncteurModel } from '@/modules/tableau-electrique/models/ligne-disjoncteur.model'
 
-defineProps<{
+const props = defineProps<{
   type: 'view' | 'print'
   disjoncteur: LigneDisjoncteurModel
 }>()
+
+const imgUrl = new URL(`/src/assets/${props.disjoncteur.type}.png`, import.meta.url).href
 </script>
 
 <template>
   <div class="disjoncteur" :class="type">
-    <img
-      :src="'src/assets/' + disjoncteur.type + '.png'"
-      :alt="disjoncteur.type"
-      :title="disjoncteur.type"
-    />
+    <img :src="imgUrl" :alt="disjoncteur.type" :title="disjoncteur.type" />
 
     <div class="pieces" v-if="type === 'view'">
       <span class="piece" v-for="(piece, index) in disjoncteur.pieces" :key="index">{{
