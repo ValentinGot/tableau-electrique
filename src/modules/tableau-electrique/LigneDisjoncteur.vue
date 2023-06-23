@@ -34,12 +34,11 @@ const imgUrl = new URL(`/src/assets/${props.disjoncteur.type}.png`, import.meta.
     flex-direction: column;
     align-items: center;
     flex: 1;
-    min-height: 270px;
     padding: 10px;
     user-select: none;
 
     & img {
-      height: 80px;
+      height: 65px;
     }
 
     .pieces {
@@ -59,6 +58,10 @@ const imgUrl = new URL(`/src/assets/${props.disjoncteur.type}.png`, import.meta.
     & ul {
       margin-top: 10px;
       align-self: flex-start;
+
+      & li {
+        font-size: 0.875rem;
+      }
     }
 
     &:not(:first-child) {
