@@ -1,7 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const showHeader = computed(() => route.query.sh === 'true')
+</script>
 
 <template>
-  <header>
+  <header v-if="showHeader">
     <ul>
       <li><router-link to="/" active-class="active">Accueil</router-link></li>
       <li><router-link to="/impression" active-class="active">Impression</router-link></li>
