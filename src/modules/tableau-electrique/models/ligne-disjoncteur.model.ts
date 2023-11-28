@@ -11,7 +11,8 @@ export enum LigneDisjoncteurType {
   PLAQUE_DE_CUISSON = 'plaque-de-cuisson',
   LAVE_VAISSELLE = 'lave-vaisselle',
   SECHE_LINGE = 'seche-linge',
-  VMC = 'vmc'
+  VMC = 'vmc',
+  GARAGE = 'garage'
 }
 
 export interface LigneDisjoncteurModel {

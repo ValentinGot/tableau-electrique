@@ -103,10 +103,10 @@ export const tableauElectrique: LigneModel[] = [
       },
       {
         id: 5,
-        type: LigneDisjoncteurType.CHAUFFE_EAU,
+        type: LigneDisjoncteurType.GARAGE,
         pieces: [Piece.GARAGE],
-        detail: ['Chauffe eau'],
-        shortDescription: 'Chauffe eau'
+        detail: ['Chauffe eau', 'Cave à vin'],
+        shortDescription: 'Chauffe eau, cave à vin'
       },
       {
         id: 6,
