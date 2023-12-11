@@ -30,7 +30,7 @@ export const tableauElectrique: LigneModel[] = [
         id: 3,
         type: LigneDisjoncteurType.PRISE,
         pieces: [Piece.BUREAU, Piece.SALLE_DE_BAIN, Piece.PALIER_ESCALIER],
-        detail: ['Palier x1', 'Salle de bain - Lavabo', 'Salle de bain - Lave linge'],
+        detail: ['Salle de bain - Lave linge', 'Salle de bain - Lavabo', 'Palier x1', 'Bureau x3'],
         shortDescription: 'Palier, Bureau, SdB - Lavabo et lave linge'
       },
       {
