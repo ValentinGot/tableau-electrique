@@ -89,7 +89,7 @@ export const tableauElectrique: LigneModel[] = [
       {
         id: 4,
         type: LigneDisjoncteurType.PRISE,
-        pieces: [Piece.SALON, Piece.SAS, Piece.GARAGE],
+        pieces: [Piece.SALON, Piece.SAS, Piece.GARAGE, Piece.SALLE_D_EAU],
         detail: [
           'A gauche du tableau électrique',
           'Bar',
@@ -97,9 +97,10 @@ export const tableauElectrique: LigneModel[] = [
           `Mur vers l'extérieur x2`,
           'TV x3',
           'Sas côté jardin',
+          "Salle d'eau",
           'Garage'
         ],
-        shortDescription: 'Salon, sas côté jardin, garage'
+        shortDescription: "Salon, salle d'eau, sas côté jardin, garage"
       },
       {
         id: 5,
