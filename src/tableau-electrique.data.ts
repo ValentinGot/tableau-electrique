@@ -29,9 +29,18 @@ export const tableauElectrique: LigneModel[] = [
       {
         id: 3,
         type: LigneDisjoncteurType.PRISE,
-        pieces: [Piece.BUREAU, Piece.SALLE_DE_BAIN, Piece.PALIER_ESCALIER],
-        detail: ['Salle de bain - Lave linge', 'Salle de bain - Lavabo', 'Palier x1', 'Bureau x3'],
-        shortDescription: 'Palier, Bureau, SdB - Lavabo et lave linge'
+        pieces: [Piece.SALON, Piece.SAS, Piece.GARAGE, Piece.SALLE_D_EAU],
+        detail: [
+          'A gauche du tableau électrique',
+          'Bar',
+          'Table à manger',
+          `Mur vers l'extérieur x2`,
+          'TV x3',
+          'Sas côté jardin',
+          "Salle d'eau",
+          'Garage'
+        ],
+        shortDescription: "Salon, salle d'eau, sas côté jardin, garage"
       },
       {
         id: 4,
@@ -89,18 +98,9 @@ export const tableauElectrique: LigneModel[] = [
       {
         id: 4,
         type: LigneDisjoncteurType.PRISE,
-        pieces: [Piece.SALON, Piece.SAS, Piece.GARAGE, Piece.SALLE_D_EAU],
-        detail: [
-          'A gauche du tableau électrique',
-          'Bar',
-          'Table à manger',
-          `Mur vers l'extérieur x2`,
-          'TV x3',
-          'Sas côté jardin',
-          "Salle d'eau",
-          'Garage'
-        ],
-        shortDescription: "Salon, salle d'eau, sas côté jardin, garage"
+        pieces: [Piece.BUREAU, Piece.SALLE_DE_BAIN, Piece.PALIER_ESCALIER],
+        detail: ['Salle de bain - Lave linge', 'Salle de bain - Lavabo', 'Palier x1', 'Bureau x3'],
+        shortDescription: 'Palier, Bureau, SdB - Lavabo et lave linge'
       },
       {
         id: 5,
